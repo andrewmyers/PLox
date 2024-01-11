@@ -1,0 +1,19 @@
+{
+    "name": "andrewmyers/plox",
+    "description": "Php implementation of the lox language from Crafting Interpreters",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AndrewMyers\\PLox\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrew Myers",
+            "email": "andrewshannonmyers@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
