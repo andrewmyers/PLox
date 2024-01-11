@@ -2,7 +2,6 @@
 
 namespace AndrewMyers\PLox;
 
-
 class PLox
 {
     public $hadError = false;
@@ -49,7 +48,7 @@ class PLox
         $tokens  = $scanner->scanTokens();
 
         foreach ($tokens as $token) {
-            echo $token;
+            echo $token . PHP_EOL;
         }
     }
 
@@ -62,6 +61,6 @@ class PLox
     {
         $this->hadError = true;
 
-        echo "[line: $line]: Error + $where: $message";
+        echo "[line: $line]: Error $where: $message" . PHP_EOL;
     }
 }
